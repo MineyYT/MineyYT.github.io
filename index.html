@@ -317,5 +317,64 @@
     </div>
 </div>
 </div>
+
+<div class="window" style="width: 400px">
+  <div class="title-bar">
+    <div class="title-bar-text">Finestra random con varie minchiate</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <menu role="tablist">
+      <button aria-selected="true" aria-controls="music">Best of all</button>
+      <button aria-controls="dogs">Diprè</button>
+      <button aria-controls="food">Shrimp</button>
+    </menu>
+    <article role="tabpanel" id="music">
+        <p>Migliore di sempre tra questi?</p>
+        <fieldset>
+          <legend>Seleziona!</legend>
+          <div class="field-row">
+            <input id="radio29" type="radio" name="fieldset-example2">
+            <label for="radio29">Rosario Muniz</label>
+          </div>
+          <div class="field-row">
+            <input id="radio30" type="radio" name="fieldset-example2">
+            <label for="radio30">Andrea Diprè</label>
+          </div>
+          <div class="field-row">
+            <input id="radio31" type="radio" name="fieldset-example2">
+            <label for="radio31">Aurelio del regno</label>
+          </div>
+          <div class="field-row">
+            <input id="radio32" type="radio" name="fieldset-example2">
+            <label for="radio32">Dario Greggio</label>
+          </div>
+        </fieldset>
+        <section class="field-row">
+          <button>Resettati...</button>
+          <label>MI SENTO UNA TVOIA!!!!</label>
+        </section>
+      </article>
+
+    <article role="tabpanel" hidden id="dogs">
+      <img style="width: 100%" src="https://ldm.r1-it.storage.cloud.it/img/13/12/12/big/15916_3608_52aa09b44b9441.75571191.jpg" />
+    </article>
+
+    <article role="tabpanel" hidden id="food">
+      <p>
+        yes. <code>article</code> tag.
+      </p>
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/GtRuQqqVLZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </article>
+    <section class="field-row" style="justify-content: flex-end">
+      <button>OK</button>
+      <button>Cancel</button>
+    </section>
+  </div>
+</div>
 </body>
 </html>
