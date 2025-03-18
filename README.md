@@ -9,7 +9,11 @@
 <a href="https://github.com/MineyYT/MineyYT.github.io/network/members"><img title="Fork" src="https://img.shields.io/github/forks/MineyYT/MineyYT.github.io?style=social"></a>
 <a href="https://github.com/MineyYT/MineyYT.github.io/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/MineyYT/MineyYT.github.io?label=Watching&style=social"></a>
 </p>
-<p align="center">---------------------------------------------------</p>
+
+----
+ <p align="center"><img src="https://profile-counter.glitch.me/{MineyYT.github.io}/count.svg" alt="MineyYT :: Visitor's Count" old_src="https://profile-counter.glitch.me/{MineyYT}/count.svg" /></p>
+
+----
 <p align="center">
 <a href="index.html">MySuggestion Home</a> - Qui troverai il codice della pagina principale!
 </p>
@@ -17,3 +21,8 @@
 <p align="center">
 <a href="blog.html">MySuggestion Blog</a> - Qui troverai il codice della pagine del blog!
 </p>
+<p align="center">ー═┻┳︻▄ξ(╬ಠ益ಠ)ξ▄︻┻┳═一</p>
+<div>
+  
+</div>
+<p align="center"><img src="logomysug.png"></p>
