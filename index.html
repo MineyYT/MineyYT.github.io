@@ -1,61 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-  <title>MySuggestion!</title>
+  <meta charset="UTF-8">
+  <title>MySuggestion! Forum XP</title>
   <link rel="stylesheet" href="https://unpkg.com/xp.css/dist/XP.css">
   <style>
-    /* Personalizzazioni aggiuntive (opzionali) */
     body {
-      background-image: url('https://images7.alphacoders.com/115/1158141.jpg'); /* Sfondo blu classico di XP */
-      font-family: 'Tahoma', sans-serif; /* Font più simile a quello di XP */
+      background-image: url('https://images7.alphacoders.com/115/1158141.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: 'Tahoma', sans-serif;
+      margin: 0;
+      padding-bottom: 50px;
     }
 
     .container {
-      width: 80%;
-      margin: 50px auto;
+      width: 90%;
+      max-width: 1000px;
+      margin: 30px auto;
     }
 
-    .window {
-      margin-bottom: 20px; /* Spazio tra le finestre */
+    /* Taskbar in stile XP */
+    .taskbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 30px;
+      background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #333 100%);
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      z-index: 1000;
+    }
+
+    .start-button {
+      background: linear-gradient(to bottom, #388e3c, #4caf50);
+      color: white;
+      font-weight: bold;
+      font-style: italic;
+      border: none;
+      border-radius: 0 10px 10px 0;
+      padding: 2px 15px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .tag {
+      background: #ffffcc;
+      border: 1px solid #ccc;
+      padding: 2px 5px;
+      font-size: 10px;
+      margin-right: 5px;
+    }
+
+    .post-reply {
+      margin-left: 20px;
+      border-left: 2px solid #808080;
+      padding-left: 10px;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
 
-    <div class="window">
-      <div class="title-bar">
-        <div class="title-bar-text">Benvenuto/a in MySuggestion!</div>
-        <div class="title-bar-controls">
-          <button aria-label="Minimize"></button>
-          <button aria-label="Maximize"></button>
-          <button aria-label="Close"></button>
+<div class="container">
+  
+  <div class="window" id="login-window" style="width: 300px; margin: 100px auto;">
+    <div class="title-bar">
+      <div class="title-bar-text">Login - MySuggestion!</div>
+    </div>
+    <div class="window-body">
+      <div class="field-row-stacked">
+        <label>Utente</label>
+        <input type="text" />
+      </div>
+      <div class="field-row-stacked">
+        <label>Password</label>
+        <input type="password" />
+      </div>
+      <div class="field-row">
+        <button onclick="alert('Accesso eseguito!')">Login</button>
+        <button>Registrati</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="window">
+    <div class="title-bar">
+      <div class="title-bar-text">MySuggestion! - Forum del Popolo Libero</div>
+    </div>
+    <div class="window-body">
+      <menu role="tablist">
+        <li role="tab" class="active"><a href="#tabs">Discussioni</a></li>
+        <li role="tab"><a href="#tabs">I miei Post</a></li>
+      </menu>
+      
+      <div class="window" role="tabpanel">
+        <div class="window-body">
+          <fieldset>
+            <legend><b>[DISCUSSIONE] Benvenuti su MySuggestion!</b></legend>
+            <span class="tag">NEWS</span> <span class="tag">ADMIN</span>
+            <p>Ciao a tutti! Questo è il primo post del nuovo forum XP style.</p>
+            <div class="post-reply">
+              <strong>Utente_XP:</strong> Fantastico! Funziona anche il sistema a punti?
+            </div>
+            <hr>
+            <div class="field-row">
+              <input type="text" placeholder="Scrivi una risposta..." style="width: 80%">
+              <button>Invia</button>
+            </div>
+          </fieldset>
         </div>
       </div>
-      <div class="window-body">
-        <center><h2>
-          MySuggestion! Il sito del popolo libero!
-        </h2></center>
-        <center><h3>
-          Potrai mandare qualsiasi immagine o blog tu voglia <b>cliccando il link qui sotto!</b>:
-        </h3></center>
+    </div>
+  </div>
 
-        <p>
-          <center><img src="logomysug.png" alt="✈" style="width: 196px; height: 256px; vertical-align: middle;"></center>
-          <center><a href="mailto:mysuggestionweb@gmail.com" class="button" style="vertical-align: middle;">
-            Vai alla E-Mail!
-          </a></center>
-            </p>
-        <center><p>
-          <b><a href="blog.html">Clicca qui per andare al blog di MySuggestion!</a></b>
-        </p></center>
-        <br>
+  <div class="window" style="width: 400px; float: left; margin-right: 20px;">
+    <div class="title-bar">
+      <div class="title-bar-text">Scheda Utente: NexusTrappy</div>
+    </div>
+    <div class="window-body">
+      <p><img src="https://via.placeholder.com/50" align="left" style="margin-right:10px">
+      <strong>Grado:</strong> Owner<br>
+      <strong>Punti:</strong> 1,250 XP</p>
+      <hr>
+      <p><b>Shop Sbloccabili:</b></p>
+      <ul class="tree-view">
+        <li>Badge "Veterano" (500 pt) - <button>Sblocca</button></li>
+        <li>Nome Utente Dorato (1000 pt) - <button>Sblocca</button></li>
+      </ul>
+    </div>
+  </div>
 
-        
-          </a>
-          <br>
-          <br>
-          <div align='center'><a href='https://www.free-website-hit-counter.com'><img src='https://www.free-website-hit-counter.com/zc.php?d=9&id=7271&s=1' border='0' alt='Free Website Hit Counter'></a><br /><small><a href='https://www.free-website-hit-counter.com' title="Free Website Hit Counter"></a></small></div>
-          <center><img src="https://www.betaarchive.com/wiki/images/7/76/Windows_XP_Professional_bootscreen.gif" alt="Powered by NexusTrappy"></center>
-          <center><p>Powered by NexusTrappy</p></center>
+  <div class="window" style="width: 400px; float: left;">
+    <div class="title-bar">
+      <div class="title-bar-text">Pannello Moderazione</div>
+    </div>
+    <div class="window-body">
+      <p>Segnalazioni attive: 0</p>
+      <table style="width:100%">
+        <thead>
+          <tr>
+            <th>Utente</th>
+            <th>Azione</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Spammer99</td>
+            <td><button>BAN</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
+</div>
+
+<div class="taskbar">
+  <button class="start-button">Start</button>
+  <div class="status-bar-field" style="color:white; margin-left: 10px;">MySuggestion! Forum</div>
+  <div style="flex-grow: 1;"></div>
+  <div class="status-bar-field" style="color:white; background: #0975ea; padding: 0 10px;">12:00</div>
+</div>
+
+</body>
+</html>
